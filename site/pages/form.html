@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма регистрации</title>
+</head>
+<body>
+  <h2>ПЕРСОНАЛЬНЫЕ ДАННЫЕ</h2>
+  <form action="" method="post">
+    <div>
+      <label for="f1">ФИО</label>
+      <input type="text"
+             name="username"
+             id="f1"
+             required
+             placeholder="Введите имя">
+    </div>
+    <div>
+      <label>Пол</label>
+      <input type="radio" name="gender" value="m"><span>М</span>
+      <input type="radio" name="gender" value="f"><span>Ж</span>
+    </div>
+    <div>
+      <label for="age">Возраст</label>
+      <input type="number" name="" value="" id = "age" min="0" max="120">
+    </div>
+    <div>
+      <label>Вы здесь были уже раньше?</label>
+      <input type="checkbox" name="ch1" checked><span>один раз</span>
+      <input type="checkbox" name="ch2"><span>бываю часто</span>
+      <input type="checkbox" name="ch3"><span>никогда</span>
+    </div>
+    <div>
+      <label for="tel">Телефон</label>
+      <input type="tel" name="" value="" id = "tel">
+    </div>
+    <div>
+      <label for="city">Город</label>
+      <select name="sitySelector" id="">
+        <option value="cityEmpty">Выберете город...</option>
+        <option value="citySpb">Санкт-Петербург</option>
+        <option value="cityMsk">Москва</option>
+        <option value="cityNsk">Новосибирск</option>
+      </select>
+    </div>
+    <h2>ДАННЫЕ ДЛЯ ВХОДА</h2>
+    <div>
+      <label for="email">E-Mail</label>
+      <input type="email" name="emil" value="" id="emil">
+    </div>
+    <div>
+      <label for="pswd">Password</label>
+      <input type="password" name="pswd" value="" id="pswd">
+    </div>
+    <div>
+      <button type="submit" name="button">Отправить</button>
+      <button type="reset" name="button">Отчистить</button>
+    </div>
+  </form>
+</body>
+</html>
