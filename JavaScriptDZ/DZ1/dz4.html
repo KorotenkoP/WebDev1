@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+    Дано целое число в диапазоне 1 - 5.
+    Вывести
+    строку - словесное описание соответствующей
+    оценки
+    (1 - "плохо",
+    2 - "неудовлетворительно",
+
+    3 - "удовлетворительно",
+    4 - "хорошо",
+    5 - "отлично").
+
+</p>
+<script type="text/javascript">
+var a = prompt("введите число", 0);
+var str = a + " - ";
+if (a==1){
+  str = str + "плохо";
+}
+if (a==2){
+  str = str + "неудовлетворительно";
+}
+if (a==3){
+  str = str + "удовлетворительно";
+}
+if (a==4){
+  str = str + "хорошо";
+}
+if (a==5){
+  str = str + "отлично";
+}
+document.write("<h1>"+ str + " </h1>")
+
+</script>
+</body>
+</html>

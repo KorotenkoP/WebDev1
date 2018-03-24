@@ -1,0 +1,76 @@
+p {
+  color: green;
+}
+
+.first .news p {
+    color: red;
+}
+
+.second .news span {
+    font-weight: bold;
+}
+
+.news h1 {
+    background: #494948;
+    color: white;
+    font-family: Arial;
+    /* width: 400px; */
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.news p {
+    /* width: 400px; */
+    margin: auto;
+    line-height: 2;
+    background: #cdcdcd;
+}
+
+img {
+    margin-left: 100;
+    margin-top: 100px;
+    border: 2px solid red;
+    /* padding: 50px; */
+    background: green;
+    border-radius: 50%;
+    height: 100px;
+}
+
+a.action-button {
+    background-color: #a2cf8e;
+    color: white;
+    font-family: Arial;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav.list-of-animal {
+    margin-left: 10%;
+    background: gray;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.related {
+    clear: left;
+}
+
+.news-1, .news-2 {
+    float: left;
+    /* border: 1px solid; */
+    width: 50%;
+    padding: 0px 20px;
+}
+/* body {
+    background-image: url(../images/фон1.png); /* Путь к фоновому изображению */
+    /* background-color: #c7b39b; /* Цвет фона */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+/* }  */

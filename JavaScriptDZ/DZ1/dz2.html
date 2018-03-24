@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <p>Дано целое число, лежащее в диапазоне от -999 до 999.
+  Вывести строку - словесное описание данного числа вида
+  "отрицательное двузначное число",
+  "нулевое число",
+  "положительное однозначное число" и т.д.</p>
+  <script type="text/javascript">
+    var num = prompt("Введите число", 0);
+    var str = num + " - ";
+    if (num<0){
+      str = str + "отрицательное ";
+      num = num*-1;
+    }else {
+      str = str + "положительное "
+    }
+
+    if (num == 0){
+      str = "<h1>нулевое значение</h1>";
+    }
+    else if ((num/100)>=1){
+      str = str + "трехзначное число";
+    } else if ((num/10)>=1) {
+      str = str + "двузначное число";
+    }else {
+      str = str + "однозначное число";
+    }
+    if (num>999 || num<-999){
+      str = "Число должно быть от -999 до 999";
+    }
+    document.write(str);
+  </script>
+</body>
+</html>

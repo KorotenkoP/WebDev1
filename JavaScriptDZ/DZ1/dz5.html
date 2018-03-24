@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Проверить истинность высказывания:
+
+  "Среди трех данных целых чисел есть хоть
+  бы одна пара совпадающих".
+
+  Требуется вывести логическое значение True,
+  если
+  приведенное высказывание для предложенных исходных
+  данных
+  является истинным, и значение False в противном случае.
+</p>
+<script type="text/javascript">
+var a = prompt("введите первое число", 0);
+var b = prompt("введите второе число", 0);
+var c = prompt("введите третье число", 0);
+var str = "";
+if (a==b||a==c||b==c){
+  str = "True";
+}else {
+  str = "False";
+}
+
+document.write("<h1> "+ str + " </h1>")
+
+</script>
+</body>
+</html>
