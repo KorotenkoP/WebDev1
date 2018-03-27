@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var x = prompt("Введите номер меры(1 — дециметр, 2 — километр, 3 — метр, 4 — миллиметр, 5 — сантиметр): ", 0);
+    var y = prompt("Введите длину: ", 0);
+    x = parseInt(x);
+    y = Number(y);
+    var res = '';
+    if (! isNaN(x) && ! isNaN(y)){
+    // }
+    // else {
+      switch (x) {
+        case 1:
+          res = (y / 10) + ' метр';
+          alert(res);
+          break;
+        case 2:
+          res = (y * 1000) + ' метр';
+          alert(res);
+          break;
+        case 3:
+          res = y + ' метр';
+          alert(res);
+          break;
+        case 4:
+          res = (y / 1000) + ' метр';
+          alert(res);
+          break;
+        case 5:
+          res = (y / 100) + ' метр';
+          alert(res);
+          break;
+        default:
+          alert('Странный результат, очень странный');
+      }
+    }
+  </script>
+</body>
+</html>

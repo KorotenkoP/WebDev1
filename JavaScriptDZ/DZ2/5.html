@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var i = 0;
+  var j = 0;
+  var rows = 10;
+  var str = "<table><tbody>" ;
+    while (i<rows) {
+      i++;
+      str += '<tr>'
+      j = 0;
+      while (j<rows) {
+        j++;
+        str += '<td>'+ i*j + '</td>'
+      }
+      str += '</tr>'
+    }
+    str += "</table></tbody>"
+    document.write(str);
+  </script>
+</body>
+</html>
