@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var pas = prompt("введите проль:");
+    var warning = '';
+    // - длинна от 9 символов;
+    if (pas.length < 9) {
+      warning =  warning + ' short'
+    }
+    // спец символы:
+    var reg = new RegExp('(?=.*[!@#$%^&*])');
+    if (! reg.test(pas)) {
+      warning = warning + ', нет спец символов'
+    }
+    // содержит обязательно английские буквы верхнего и нижнего регистра;
+    var reg = new RegExp('(?=.*[A-Z])(?=.*[a-z])');
+    if (! reg.test(pas)) {
+      warning =  warning + ', нет английские буквы верхнего и нижнего регистра'
+    }
+    // содержит более двух цифр;
+    var reg = new RegExp('\d{1}', 'g');
+    result = pas.match(reg);
+    if (result.length < 2 ) {
+      warning =  warning + ', нет более двух цифр'
+    }
+    if (warning.length == 0) {
+      alert('Пароль норм');
+    }
+    else {
+      alert('Ошибка в пароле:' + warning);
+    }
+
+  </script>
+</body>
+</html>

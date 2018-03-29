@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var str = prompt("введите строку:");
+    var chr = prompt("введите символ:");
+    var arr = str.split('');
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] === chr) {
+        arr[i] =chr+chr;
+      };
+    };
+    str = arr.join('');
+    alert(str);
+
+  </script>
+</body>
+</html>
