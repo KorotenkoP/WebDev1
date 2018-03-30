@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    let a = [12,4,3,10,1,20];
+
+    // Gnom Sort
+    let n = a.length, i = 1, j = 2;
+    while (i < n)
+    {
+      if (a[i-1] < a[ i ]){
+        i = j;
+        j++;
+      }
+      else {
+        let t = a[i-1];
+        a[i-1] = a[i];
+        a[i] = t;
+        i--;
+        if (i == 0){
+          i = j; j++;
+        }
+      }
+    }
+    alert(a);
+  </script>
+</body>
+</html>

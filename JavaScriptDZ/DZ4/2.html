@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style media="screen">
+    section {
+      display: flex;
+      margin: 30vh;
+    }
+    .column {
+      flex-direction: row;
+    }
+    div.column>div{
+      border: 1px solid;
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+      text-align: center;
+      flex-direction: column;
+    }
+  </style>
+  <script type="text/javascript">
+    let area = [ 1, null, 0, null, 1, null, null, null, null ];
+    let str = '<section>'
+    for (let i = 0; i < area.length; i++) {
+      if (i===0||i===3||i===6){
+        (i===0)?str = str +'<div class="column">':str = str + '</div><div class="column">';
+      }
+      str = str + '<div>';
+      (area[i]===0)?str=str+'0':(area[i]===1)?str=str+'X':str=str+'';
+      str = str + '</div>';
+    }
+    str = str + '</div></section>';
+    document.write(str);
+  </script>
+</body>
+</html>
