@@ -21,20 +21,21 @@
 </p>
 <script type="text/javascript">
 var a = prompt("введите число", 0);
+a = Number(a);
 var str = a + " - ";
-if (a==1){
+if (a===1){
   str = str + "плохо";
 }
-if (a==2){
+if (a===2){
   str = str + "неудовлетворительно";
 }
-if (a==3){
+if (a===3){
   str = str + "удовлетворительно";
 }
-if (a==4){
+if (a===4){
   str = str + "хорошо";
 }
-if (a==5){
+if (a===5){
   str = str + "отлично";
 }
 document.write("<h1>"+ str + " </h1>")

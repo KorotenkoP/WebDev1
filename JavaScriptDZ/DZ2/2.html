@@ -26,20 +26,17 @@
     y3 = Number(y3);
     z3 = Number(z3);
 
-    var ab = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2)+Math.pow((z2-z1),2));
-    var bc = Math.sqrt(Math.pow((x3-x2),2)+Math.pow((y3-y2),2)+Math.pow((z3-z2),2));
-    var ac = Math.sqrt(Math.pow((x3-x1),2)+Math.pow((y3-y1),2)+Math.pow((z3-z1),2));
+    var ab = Math.pow((x2-x1),2)+Math.pow((y2-y1),2)+Math.pow((z2-z1),2);
+    var bc = Math.pow((x3-x2),2)+Math.pow((y3-y2),2)+Math.pow((z3-z2),2);
+    var ac = Math.pow((x3-x1),2)+Math.pow((y3-y1),2)+Math.pow((z3-z1),2);
 
-    var d1=ab*ab;
-    var d2=bc*bc;
-    var d3=ac*ac;
-    if ((d1===d2+d3) || (d2===d1+d3) || (d3===d1+d2)) {
+    if ((ab===bc+ac) || (bc===ab+ac) || (ac===bc+ab)) {
         alert ('Прямоугольный')
     }
     else
     {
         alert ('He прямоугольный!')
-    }; 
+    };
   </script>
 </body>
 </html>

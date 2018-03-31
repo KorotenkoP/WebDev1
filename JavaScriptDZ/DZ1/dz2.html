@@ -12,6 +12,7 @@
   "положительное однозначное число" и т.д.</p>
   <script type="text/javascript">
     var num = prompt("Введите число", 0);
+    num = Number(num);
     var str = num + " - ";
     if (num<0){
       str = str + "отрицательное ";
@@ -20,7 +21,7 @@
       str = str + "положительное "
     }
 
-    if (num == 0){
+    if (num === 0){
       str = "<h1>нулевое значение</h1>";
     }
     else if ((num/100)>=1){

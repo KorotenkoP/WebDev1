@@ -21,8 +21,11 @@
 var a = prompt("введите первое число", 0);
 var b = prompt("введите второе число", 0);
 var c = prompt("введите третье число", 0);
+a = Number(a);
+b = Number(b);
+c = Number(c);
 var str = "";
-if (a==b||a==c||b==c){
+if (a===b||a===c||b===c){
   str = "True";
 }else {
   str = "False";
