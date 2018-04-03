@@ -2,11 +2,13 @@
   box-sizing: border-box;
 }
 body {
-    font-family: "Open Sans";
-    padding: 0;
-    margin: 0;
+  margin: 0;
 }
-
+.container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .col-1,
 .col-2,
 .col-3,
