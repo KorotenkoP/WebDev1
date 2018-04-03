@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function febon(num) {
+            let res = [1,1];
+            for (let i = 1; i<num-1; i++){
+                res.push(res[i]+res[i-1]); 
+            }
+            return res; 
+        }
+        let a =   febon(8);         
+        console.log(a);
+    </script>
+</body>
+</html>

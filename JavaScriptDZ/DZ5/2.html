@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let a = [1,2,3,4,5,6];
+        let b = [5,6,7,8,9];
+        let c = [];
+        let d = [];
+        let flg = true;
+        c.push(...a);
+        c.push(...b);
+        for (let i = 0; i < c.length; i++) {
+           for (let j = 0; j < d.length; j++) {
+               if(c[i]!=d[j]){
+                   flg = true
+                }
+                else{   
+                   flg = false;
+                   break;
+                   }
+           }
+            if (flg){
+                d.push(c[i])
+            }
+        }
+        console.log(d);
+    </script>
+</body>
+</html>
