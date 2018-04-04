@@ -8,13 +8,16 @@
 <body>
     <script>
         function febon(num) {
+            if (num===1){
+                return [1];
+            }
             let res = [1,1];
             for (let i = 1; i<num-1; i++){
                 res.push(res[i]+res[i-1]); 
             }
             return res; 
         }
-        let a =   febon(8);         
+        let a = febon(3);         
         console.log(a);
     </script>
 </body>

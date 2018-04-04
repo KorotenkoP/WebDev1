@@ -10,31 +10,36 @@
         function dayinstr(num){
             let str = '';
             let a = String(num).split('');
-            
-            switch (Number(a[a.length-1])) {
-                case 1:
-                    str = 'день'
-                    break;
-                case 2:
-                case 3:
-                case 4:
-                    str = 'дня'
-                    break;
-                case 5:
-                case 6:
-                case 7:
-                case 8:
-                case 9:
-                case 0:
-                    str = 'дня'
-                    break;
-                default:
-                    break;
+            if (a.length>1 && a[a.length-2]==1)
+            {
+                str = 'день'
+            } else
+            {
+                switch (Number(a[a.length-1])) {
+                    case 1:
+                        str = 'день'
+                        break;
+                    case 2:
+                    case 3:
+                    case 4:
+                        str = 'дня'
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 0:
+                        str = 'дней'
+                        break;
+                    default:
+                        break;
+                }
             }
             return str;
         }
-        let str = dayinstr(2)
-console.log(str);
+        let str = dayinstr(12)
+        console.log(str);
     </script>
 </body>
 </html>

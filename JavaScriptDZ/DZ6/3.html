@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let max = 100 , min = 1;
+
+    function randomNum (){
+        var arr = [];
+        return function(){
+            if (arr.length===100){
+                arr.splice(0,100);
+            }
+            if (arr.length===0){
+                    let a = Math.floor(Math.random()*(max-min+1))+min;
+                    arr.push(a);
+                    return a;
+                 }
+                    while (true) {
+                        let a = Math.floor(Math.random()*(max-min+1))+min;
+                        if (find(arr, a)) {
+                            arr.push(a);
+                            return a;
+                       }
+                    }
+                }
+      }
+    function find(arr, num){
+        let flg = true;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]!=num){
+                flg = true
+            }
+            else{   
+                flg = false;
+                break;
+                }
+        }
+        return flg;
+    }
+    var b = randomNum();
+    for (let i = 0; i < 99; i++) {
+    console.log(b());
+
+    }
+       
+    </script>
+</body>
+</html>

@@ -11,15 +11,20 @@
       age: 18,
       first_name: 'fName',
       last_name: 'lName',
-      Interests: ['Game', 'C++', 'Book'],
+      interests: ['Game', 'C++', 'Book'],
       study_place: 'ifmo'
     };
-
     function print(pStud) {
-        for (let a in pStud){
-          console.log(pStud[a]);
+      for (let a in pStud){
+        if (typeof(pStud[a])==='object') {
+          for (let i =0; i<pStud[a].length; i++) {
+            console.log(a + ':' + pStud[a][i]);
+          }
+        } else {
+          console.log(a + ':' + pStud[a]);
         }
-    };
+      }
+    }
     print(stud);
   </script>
 </body>
